@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mensagem(){
+            alert("Olá!!!")
+        }
+
+        function selecionar(e){
+            var valor = parseInt(e.value)
+
+            switch(valor){
+                case 1:
+                alert("Cidade da Oktoberfest")
+                break
+
+                case 2:
+                alert("Bairro de Blumenau")
+                break
+
+                case 3:
+                alert("Festa da igreja")
+                break
+
+                default:
+                alert("Selecione uma opção")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mensagem()">Clique aqui</button>
+
+    <hr>
+
+    <select onchange="selecionar(this)">
+        <option value="0">Escolha uma opção</option>
+        <option value="1">Blumenau</option>
+        <option value="2">Gaspar</option>
+        <option value="3">Indaial</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- 6) Peça cinco números e armazene em um vetor. Não poderá haver números repetidos, sendo assim caso o usuário tente cadastrar um valor que já esteja no vetor, 
+esse valor não poderá ser cadastrado. Obtendo os cinco números, exiba cada um deles e informe a soma. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Vetor</title>
+</head>
+<body>
+    <script>
+        var numbers = []
+        var insert
+        var index = 0
+
+    
+
+        for (var contador = 0; contador < 5; contador++) {
+            insert = parseInt(prompt("Informe o " + (contador+1) + "* número"))
+            
+            if (insert == numbers[index]) {
+                alert("Este número já está cadastrado. Tente outro!")
+                insert = prompt("Informe o " + (contador+1) + "* número")
+                                
+            } else {
+                numbers[index] = insert
+                index++
+                
+            }
+        }
+    
+    document.write("Os números informados foram: ")
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 3) Informe quatro lados (números inteiros), especifique se o objeto é um quadrado ou não. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado</title>
+</head>
+<body>
+    <script>
+        var lado1 = parseInt(prompt("Informe o primeiro lado"))
+        var lado2 = parseInt(prompt("Informe o segundo lado"))
+        var lado3 = parseInt(prompt("Informe o terceiro lado"))
+        var lado4 = parseInt(prompt("Informe o quarto lado"))
+
+        var calculo = (lado1 + lado2 + lado3 + lado4)
+       
+        if (calculo % 2 == 0) {
+            document.write("Este com certeza eh um quadrado!")
+            
+        } else {
+            document.write("Este nao eh um quadrado!")
+            
+        }
+
+        
+    </script>    
+    
+</body>
+</html>

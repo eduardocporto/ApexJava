@@ -1,0 +1,9 @@
+Exemplo:
+
+for(var i = 0; i < 3; i++){
+nomes.push(prompt("Informe o " + (i+1) + "º nome"))
+}
+
+Neste caso, ao iniciar a condicional "for", já informamos que a variável "i" receberá ZERO.
+Mas logo em seguida ela já recebe o incremento "i++", neste momento a variável já não mudaria para 1? ou ela só mudaria no próximo loop?
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   <script>
+        // MATRIZ
+        var matriz = [
+        ["Eduardo1", 30, "eduardo@email.com"],
+        ["Eduardo2", 30, "eduardo2@gmail.com"],
+        ["Eduardo3", 30, "eduardo3@gmail.com"]
+
+        ]
+
+        // ADICIONAR NOVO CONTATO
+        matriz.push(["Ricardo", 31, "ricardo@gmail.com"])
+
+        //ADICIONAR VIA PROMPT
+        var nome = prompt("Informe seu nome")
+        var idade = parseInt(prompt("Informe sua idade"))
+        var email = prompt("Informe seu email")
+        matriz.push([nome, idade, email])
+
+        // VISUALIZAR POR TABELA DENTRO DO DEBUG DO NAVEGADOR
+        console.table(matriz)
+        // VISUALIZAR POR O LOG POR DENTRO DO DEBUG DO NAVEGADOR
+        //console.log(matriz)
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

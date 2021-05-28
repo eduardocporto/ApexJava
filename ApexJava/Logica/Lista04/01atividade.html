@@ -1,0 +1,32 @@
+<!-- Peça o nome de um produto, forma de pagamento (a vista ou a prazo) e o valor. 
+Se o valor do produto for maior ou igual a R$500,00, haverá um desconto de 10%, caso contrário não haverá desconto. 
+Retorne uma mensagem informado o nome do produto e o valor a ser pago. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01</title>
+</head>
+<body>
+    <script>
+        var produto = prompt("Informe o nome do produto")
+        // var formaPagamento = prompt("O pagamento sera a vista ou a prazo? \n Vista ou Prazo")
+        var valorProduto = parseInt(prompt("Informe o valor do produto"))
+
+        if (valorProduto >= 500) {
+            var valorComDesconto = parseInt() 
+            valorComDesconto = (valorProduto * 0.9)
+            document.write("O valor a ser pago no produto "+produto + " eh: R$" + valorComDesconto)
+        } else {
+            document.write("O produto "+produto + " nao possui desconto.")
+
+            
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- INFORME DEZ NUMEROS E EM SEGUIDA EXIBA A ORDEM CONTRÁRIA -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeros = []
+
+        for (var index = 0; index < 10; index++) {
+            numeros.push(parseInt(prompt("Informe o " + (index+1) + "º número")));
+            
+        }
+
+        for (var index = 9; index >= 0; index--) {
+            document.write(numeros[index] + "<hr>");
+            
+        }
+
+    </script>
+</body>
+</html>

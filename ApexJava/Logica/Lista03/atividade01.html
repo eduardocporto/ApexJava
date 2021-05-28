@@ -1,0 +1,35 @@
+<!-- //ARMAZENAR 5 NUMEROS, EM SEGUIDA RETORNAR A SOMA E LISTAR OS VALORES -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+    var numeros = []
+    soma = 0
+
+    for (var index = 0; index < 5; index++) {
+        numeros.push(prompt("Informe o " + (index+1) + " º número"));
+        
+    }
+
+    document.write("Os valores armazenados foram: " + numeros + "<hr>")
+
+    for (var index = 0; index < 5; index++) {
+        soma += parseInt(numeros[index]);
+        
+    }
+    document.write("A soma destes valores é: " + soma)
+
+
+</script>
+</body>
+</html>

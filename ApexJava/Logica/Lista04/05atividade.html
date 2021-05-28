@@ -1,0 +1,83 @@
+<!-- 5) Tendo como base o mês de maio de 2021, o usuário informa um dia entre 1 e 31 
+(valide caso informe qualquer numero diferente do intervalo), retorne o dia da semana. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da semana</title>
+</head>
+<body>
+    <script>
+        var dia = parseInt(prompt("Informe um dia do mês de maio"))
+        var segunda = [3, 10, 17, 24, 31]
+
+        switch (dia) {
+            case 2:
+            case 9:
+            case 16:
+            case 23:
+            case 30:
+                document.write("Este dia é um domingo")
+                break;
+
+            case 3:
+            case 10:
+            case 17:
+            case 24:
+            case 31:
+                document.write("Este dia é uma segunda-feira")
+                break;
+
+            case 4:
+            case 11:
+            case 18:
+            case 25:
+                document.write("Este dia é uma terça-feira")
+                break;
+
+            case 5:
+            case 12:
+            case 19:
+            case 26:
+                document.write("Este dia é uma quarta-feira")
+                break;
+
+            case 6:
+            case 13:
+            case 20:
+            case 27:
+                document.write("Este dia é uma quinta-feira")
+                break;
+
+            case 7:
+            case 14:
+            case 21:
+            case 28:
+                document.write("Este dia é uma sexta-feira")
+                break;
+                            
+            case 8:
+            case 15:
+            case 22:
+            case 29:
+                document.write("Este dia é um sábado")
+                break;
+
+            default:
+                alert("Este dia não é válido! Informe outro dia.")
+                document.write(window.location.href="05atividade.html")
+                
+                break;
+        }
+        
+
+
+        
+
+    </script>
+    
+</body>
+</html>

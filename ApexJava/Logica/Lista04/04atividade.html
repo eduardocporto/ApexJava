@@ -1,0 +1,35 @@
+<!-- 4) Peça três lados de um triângulo e retorne o tipo:
+Isósceles: possui dois lados iguais e um diferente
+Escaleno: possui todos os lados diferentes
+Eqüilátero: possui três lados iguais -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o triangulo?</title>
+</head>
+<body>
+    <script>
+        var lado1 = parseInt(prompt("Informe o lado 1"))
+        var lado2 = parseInt(prompt("Informe o lado 3"))
+        var lado3 = parseInt(prompt("Informe o lado 3"))
+
+        if (lado1 == lado2 && lado2 == lado3) {
+            document.write("Este eh um Triangulo Equilatero")
+            
+        } else if (lado1 != lado2 && lado2 != lado3) {
+            document.write("Este eh um Triangulo Escaleno")
+
+        }else {
+            document.write("Este eh um Triangulo Isoceles")
+
+
+            
+        }
+    </script>
+    
+</body>
+</html>

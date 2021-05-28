@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //VETOR
+        var numeros = []
+
+        //CONTADORES
+        var pares = 0, impares = 0
+
+        //OBTER OS CINCO NÚMEROS
+        for (var i = 0; i < 5; i++) {
+            numeros.push(prompt("Informe o " + (i+1) + " º número"));
+            
+        }
+
+        //CONTABILIZAR PARES E IMPARES
+        for (var i = 0; i < 5; i++) {
+            if (numeros[i] % 2 == 0){
+                pares++
+            }else{
+                impares++
+            }
+                
+                       
+        }
+
+        document.write("Numeros informados: " + numeros + "<hr>")
+
+        //EXIBINDO PARES E IMPARES
+        document.write("Pares: " + pares + "<hr>Impares: " + impares)
+
+        //COMANDO "console" PARA ARMAZENAR E MOSTRAR AS INFORMAÇÕES NO CONSOLE (MOSTRADO NO NAVEGADOR PELO F12)
+        console.log(numeros)
+
+
+    </script>
+</body>
+</html>
