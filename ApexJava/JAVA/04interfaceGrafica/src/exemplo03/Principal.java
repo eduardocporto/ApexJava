@@ -56,7 +56,8 @@ public class Principal extends JFrame {
 		rdbtnCSharp.setBounds(180, 53, 103, 21);
 		rdbtnCSharp.setActionCommand("C#");
 		contentPane.add(rdbtnCSharp);
-		
+
+// UNINDO OS RDBUTTONS		
 		ButtonGroup grupo = new ButtonGroup();
 		grupo.add(rdbtnJava);
 		grupo.add(rdbtnCSharp);
